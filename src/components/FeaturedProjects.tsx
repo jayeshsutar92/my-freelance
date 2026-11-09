@@ -35,30 +35,27 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onSelectProj
               >
                 {/* Visual Preview Container */}
                 <div
-                  className={`relative rounded-[16px] p-5 sm:p-6 min-h-[220px] flex flex-col justify-between overflow-hidden transition-colors ${
-                    project.previewType === 'flowtime'
+                  className={`relative rounded-[16px] p-5 sm:p-6 min-h-[220px] flex flex-col justify-between overflow-hidden transition-colors ${project.previewType === 'flowtime'
                       ? 'bg-[#101214] text-white'
                       : project.previewType === 'omkar'
-                      ? 'bg-[#F2ECE1] text-[#1C1A17]'
-                      : 'bg-[#EFE9DF] text-[#1C1A17]'
-                  }`}
+                        ? 'bg-[#F2ECE1] text-[#1C1A17]'
+                        : 'bg-[#EFE9DF] text-[#1C1A17]'
+                    }`}
                 >
                   {/* Subtle top header bar inside mockup */}
                   <div className="flex items-center justify-between text-[11px] font-mono tracking-wider">
                     <div className="flex items-center gap-2">
                       <span
-                        className={`w-2 h-2 rounded-full ${
-                          project.previewType === 'flowtime'
+                        className={`w-2 h-2 rounded-full ${project.previewType === 'flowtime'
                             ? 'bg-emerald-400'
                             : project.previewType === 'omkar'
-                            ? 'bg-[#C85024]'
-                            : 'bg-sky-500'
-                        }`}
+                              ? 'bg-[#C85024]'
+                              : 'bg-sky-500'
+                          }`}
                       />
                       <span
-                        className={`font-medium ${
-                          project.previewType === 'flowtime' ? 'text-neutral-300' : 'text-neutral-700'
-                        }`}
+                        className={`font-medium ${project.previewType === 'flowtime' ? 'text-neutral-300' : 'text-neutral-700'
+                          }`}
                       >
                         {project.title}
                       </span>
